@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #f4f6f8;
+    color: #ba1be5;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 1.5rem 0;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #f4f6f8;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+.logo {
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.w56 {
+    width: 56px;
+}
+
+.w24 {
+    width: 24px;
+}
+
+.w16 {
+    width: 24px;
+}
+
+.w250 {
+    width: 250px;
+}
+
+.cart-btn {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .2rem .8rem;
+    background: #f0f4f8;
+    border-radius: 999px;
+    font-weight: 500;
+    color: #333;
+    transition: background 0.2s;
+}
+
+.cart-btn:hover {
+    background: #e1e8ee;
+    cursor: pointer;
+}
+
+.cart-icon {
+    margin-top: 8px;
+}
+
+.cart-count {
+    min-width: 20px;
+    height: 20px;
+    background: #ba1be5;
+    color: #fff;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.cart-sum {
+    color: #ba1be5;
+    font-weight: 600;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+    padding: 0.5rem 0;
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
+.category-btn {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    border: 1px solid #dfe3e8;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #ba1be5;
+    white-space: nowrap;
+    transition: all 0.2s;
+}
+
+.category-btn:hover {
+    border-color: #ba1be5;
+    color: #ba1be5;
+    cursor: pointer;
+}
+
+.category-btn.active {
+    background: #ba1be5;
+    border-color: #ba1be5;
+    color: #fff;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.25rem;
+    border: 1px solid #e8ebef;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 12px 4px rgba(0,0,0,0.08);
+    transition: .2s;
+}
+
+.product-card:hover {
+    border-color: #d1d9e0;
+    box-shadow: 0 6px 4px rgba(0,0,0,0.08);
+}
+
+.product-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0.35rem 0;
+    text-align: center;
+}
+
+.product-description {
+    font-size: 0.85rem;
+    color: #6a7280;
+    margin: 0.75rem 0;
+    flex: 1;
+    text-align: justify;
+}
+
+.product-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ba1be5;
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    color: #f39c12;
+}
+
+.product-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.15s;
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    background: #ba1be5;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #9a16be;
+}
+
+.btn-secondary {
+    background: #fff;
+    color: #ba1be5;
+    border-color: #ba1be5;
+}
+
+.btn-secondary:hover {
+    background: #eceaea;
+}
+
+.empty-state{
+    text-align: center;
+    padding: 3rem;
+    color: #ba1be5;
+}

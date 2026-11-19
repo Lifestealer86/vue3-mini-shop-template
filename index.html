@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мини магазин на Vue 3</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/online_shop_logo.png" type="image/png">
+    <script defer type="module" src="assets/js/main.js"></script>
+</head>
+<body>
+<div id="app">
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <a href=""><img src="assets/img/online_shop_logo.png" alt="logo" class="w56">Мини Магазин</a>
+            </h1>
+            <div class="cart-btn">
+                <span class="cart-icon"><img src="assets/img/cart.png" alt="cart" class="w24"></span>
+                <span class="cart-count">3</span>
+                <span class="cart-sum">9 999 ₽</span>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <nav class="categories">
+            <a class="category-btn active">
+                <img src="assets/img/all_products.png" alt="categories" class="w24">
+                <span>Все товары</span>
+            </a>
+            <a class="category-btn">
+                <img src="assets/img/electronic.png" alt="categories" class="w24">
+                <span>Электроника</span>
+            </a>
+            <a class="category-btn">
+                <img src="assets/img/t-shirt.png" alt="categories" class="w24">
+                <span>Одежда и обувь</span>
+            </a>
+            <a class="category-btn">
+                <img src="assets/img/house.png" alt="categories" class="w24">
+                <span>Дом и кухня</span>
+            </a>
+        </nav>
+        <section class="products-grid">
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="assets/img/iphone.jpg" alt="iphone" class="w250">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 198 Pro</h3>
+                    <p class="product-description">Флагманский смартфон с титановым корпусом</p>
+                </div>
+                <div class="product-meta">
+                    <span class="product-price">119 990 ₽</span>
+                    <span class="product-rating">
+                        <img src="assets/img/star_full.png" alt="star_full" class="w16">
+                        <span>4.3(3)</span>
+                    </span>
+                </div>
+                <div class="product-actions">
+                    <a href="" class="btn btn-primary">Подробнее</a>
+                    <a href="" class="btn btn-secondary">В корзину</a>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="assets/img/macbook.png" alt="macbook" class="w250">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">MacBook Air M34</h3>
+                    <p class="product-description">Ультратонкий ноутбук на чипе M34</p>
+                </div>
+                <div class="product-meta">
+                    <span class="product-price">109 990 ₽</span>
+                    <span class="product-rating">
+                        <img src="assets/img/star_full.png" alt="star_full" class="w16">
+                        <span>4.9(2)</span>
+                    </span>
+                </div>
+                <div class="product-actions">
+                    <a href="" class="btn btn-primary">Подробнее</a>
+                    <a href="" class="btn btn-secondary">В корзину</a>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="assets/img/headphones.jpg" alt="headphones" class="w250">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Sony WH-1000XM51811</h3>
+                    <p class="product-description">Наушники с лучшим шумоподавлением</p>
+                </div>
+                <div class="product-meta">
+                    <span class="product-price">34 990 ₽</span>
+                    <span class="product-rating">
+                        <img src="assets/img/star_full.png" alt="star_full" class="w16">
+                        <span>4.7(2)</span>
+                    </span>
+                </div>
+                <div class="product-actions">
+                    <a href="" class="btn btn-primary">Подробнее</a>
+                    <a href="" class="btn btn-secondary">В корзину</a>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="assets/img/snikers.jpg" alt="snikers" class="w250">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Кроссовки Nike Air Max Pro 2700</h3>
+                    <p class="product-description">Иконичные кроссовки с максимальной амортизацией</p>
+                </div>
+                <div class="product-meta">
+                    <span class="product-price">12 990 ₽</span>
+                    <span class="product-rating">
+                        <img src="assets/img/star_full.png" alt="star_full" class="w16">
+                        <span>4.5(5)</span>
+                    </span>
+                </div>
+                <div class="product-actions">
+                    <a href="" class="btn btn-primary">Подробнее</a>
+                    <a href="" class="btn btn-secondary">В корзину</a>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="assets/img/clothe.jpg" alt="clothe" class="w250">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Куртка The North Face Nup</h3>
+                    <p class="product-description">Легендарный пуховик 1996 года</p>
+                </div>
+                <div class="product-meta">
+                    <span class="product-price">24 990 ₽</span>
+                    <span class="product-rating">
+                        <img src="assets/img/star_full.png" alt="star_full" class="w16">
+                        <span>4.8(3)</span>
+                    </span>
+                </div>
+                <div class="product-actions">
+                    <a href="" class="btn btn-primary">Подробнее</a>
+                    <a href="" class="btn btn-secondary">В корзину</a>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="assets/img/tea_cups.png" alt="tea_cups" class="w250">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Чайный набор "Имперский"</h3>
+                    <p class="product-description">Коллекционный пуэр + гайвань + чахи в комплекте</p>
+                </div>
+                <div class="product-meta">
+                    <span class="product-price">5 490 ₽</span>
+                    <span class="product-rating">
+                        <span>Нет отзывов</span>
+                    </span>
+                </div>
+                <div class="product-actions">
+                    <a href="" class="btn btn-primary">Подробнее</a>
+                    <a href="" class="btn btn-secondary">В корзину</a>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="assets/img/vacuum_cleaner.jpg" alt="vacuum_cleaner" class="w250">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Робот-пылесос Xiaomi Robot Vacuum X10++ NX</h3>
+                    <p class="product-description">Сухая и мокрая уборка, база автоочистки</p>
+                </div>
+                <div class="product-meta">
+                    <span class="product-price">350 ₽</span>
+                    <span class="product-rating">
+                        <img src="assets/img/star_full.png" alt="star_full" class="w16">
+                        <span>3.1(2)</span>
+                    </span>
+                </div>
+                <div class="product-actions">
+                    <a href="" class="btn btn-primary">Подробнее</a>
+                    <a href="" class="btn btn-secondary">В корзину</a>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="assets/img/knifes.png" alt="knifes" class="w250">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Набор ножей Zwilling Professional "XXS"</h3>
+                    <p class="product-description">Немецкое качество: 7 ножей в титановом блоке</p>
+                </div>
+                <div class="product-meta">
+                    <span class="product-price">18 990 ₽</span>
+                    <span class="product-rating">
+                        <img src="assets/img/star_full.png" alt="star_full" class="w16">
+                        <span>5.0(1)</span>
+                    </span>
+                </div>
+                <div class="product-actions">
+                    <a href="" class="btn btn-primary">Подробнее</a>
+                    <a href="" class="btn btn-secondary">В корзину</a>
+                </div>
+            </article>
+        </section>
+<!--        <p class="empty-state">Товаров в нет</p>-->
+    </main>
+</div>
+</body>
+</html>
