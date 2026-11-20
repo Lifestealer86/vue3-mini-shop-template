@@ -324,14 +324,23 @@
                         <div class="form-group">
                             <label>Оценка</label>
                             <div class="star-input">
-                                <button type="button">★</button>
+                                <input type="radio" name="rating" id="star-5" value="5">
+                                <label for="star-5" class="star"></label>
+                                <input type="radio" name="rating" id="star-4" value="4">
+                                <label for="star-4" class="star"></label>
+                                <input type="radio" name="rating" id="star-3" value="3">
+                                <label for="star-3" class="star"></label>
+                                <input type="radio" name="rating" id="star-2" value="2">
+                                <label for="star-2" class="star"></label>
+                                <input type="radio" name="rating" id="star-1" value="1">
+                                <label for="star-1" class="star"></label>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="comment">Текст отзыва</label>
                             <textarea id="comment" rows="3" placeholder="Ваш отзыв..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">
+                        <button type="submit" class="btn btn-primary" disabled>
                             Отправить
                         </button>
                     </form>

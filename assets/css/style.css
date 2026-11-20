@@ -244,12 +244,18 @@ header .container {
     cursor: pointer;
 }
 
+.btn:disabled {
+    cursor: not-allowed;
+    background: #f6e0ff;
+    color: #d1d9e0;
+}
+
 .btn-primary {
     background: #ba1be5;
     color: #fff;
 }
 
-.btn-primary:hover {
+.btn-primary:hover:not(:disabled) {
     background: #9a16be;
 }
 
@@ -259,7 +265,7 @@ header .container {
     border-color: #ba1be5;
 }
 
-.btn-secondary:hover {
+.btn-secondary:hover:not(:disabled) {
     background: #eceaea;
 }
 
@@ -274,7 +280,7 @@ header .container {
     transition: .2s;
 }
 
-.btn-outline:hover {
+.btn-outline:hover:not(:disabled) {
     background: #d1d9e0;
 }
 
@@ -388,6 +394,7 @@ header .container {
     height: fit-content;
     position: sticky;
     top: 90px;
+    margin: -3rem 0 3rem;
 }
 
 .detail-reviews h3 {
@@ -444,4 +451,77 @@ header .container {
 .review-form {
     padding-top: 1.5rem;
     border-top: 1px solid #d3d3d3;
+    display: flex;
+    flex-direction: column;
 }
+
+.review-form h4 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-size: 0.85rem; font-weight: 500;
+    color: #4a5568;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.65rem 0.85rem;
+    border: 1px solid #d1d9e0;
+    border-radius: 8px;
+    background: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #ba1be5;
+    box-shadow: 0 0 0 3px #f6e0ff;
+}
+
+.form-group textarea {
+    resize: none;
+    min-height: 80px;
+}
+
+.review-form button {
+    align-self: stretch;
+}
+
+.star-input {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.star-input input {
+    display: none;
+}
+
+.star-input label {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-image: url('../img/star_empty.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.star-input label:hover,
+.star-input label:hover ~ label,
+.star-input input:checked ~ label {
+    background-image: url('../img/star_full.png');
+}
+
