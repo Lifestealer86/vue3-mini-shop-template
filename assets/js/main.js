@@ -2,7 +2,7 @@ import {createApp, reactive, ref} from './vue.esm-browser.js';
 
 createApp({
     setup() {
-        const product = ref({
+        const product = reactive({
             name: "Куртка The North Face Nuptse",
             description: "Легендарный пуховик 1796 года",
         })

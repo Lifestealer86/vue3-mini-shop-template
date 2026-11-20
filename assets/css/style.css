@@ -84,7 +84,7 @@ header .container {
     gap: .5rem;
     padding: .2rem .8rem;
     background: #f0f4f8;
-    border-radius: 999px;
+    border-radius: 150px;
     font-weight: 500;
     color: #333;
     transition: background 0.2s;
@@ -104,7 +104,7 @@ header .container {
     height: 20px;
     background: #ba1be5;
     color: #fff;
-    border-radius: 999px;
+    border-radius: 50%;
     font-size: 0.7rem;
     display: flex;
     align-items: center;
@@ -134,7 +134,7 @@ header .container {
     padding: 0.5rem 1rem;
     background: #fff;
     border: 1px solid #dfe3e8;
-    border-radius: 999px;
+    border-radius: 25px;
     font-size: 0.875rem;
     font-weight: 500;
     color: #ba1be5;
@@ -356,7 +356,7 @@ header .container {
     font-size: 1.2rem;
     background: #f6e0ff;
     padding: 0.25rem 0.75rem;
-    border-radius: 999px;
+    border-radius: 25px;
     margin-bottom: 0.75rem;
     width: fit-content;
 }
