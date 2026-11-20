@@ -241,6 +241,7 @@ header .container {
     font-weight: 500;
     transition: all 0.15s;
     border: 1px solid transparent;
+    cursor: pointer;
 }
 
 .btn-primary {
@@ -268,10 +269,13 @@ header .container {
     border: 1px solid #ba1be5;
 }
 
-.empty-state{
-    text-align: center;
-    padding: 3rem;
-    color: #ba1be5;
+.btn-outline:hover {
+    background: #f4f6f8;
+    transition: .2s;
+}
+
+.btn-outline:hover {
+    background: #d1d9e0;
 }
 
 .back-btn {
@@ -288,6 +292,18 @@ header .container {
 
 .back-btn:hover {
     color: #ba1be5;
+}
+
+.empty-state{
+    text-align: center;
+    padding: 3rem;
+    color: #ba1be5;
+}
+
+.detail-reviews h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .detail-grid {
@@ -348,6 +364,7 @@ header .container {
 }
 
 .rating-count {
+    font-size: 1.25rem;
     color: #c961ee;
 }
 
@@ -367,7 +384,7 @@ header .container {
     background: #fff;
     border-radius: 12px;
     padding: 1.5rem;
-    border: 1px solid #e8ebef;
+    border: 1px solid #d3d3d3;
     height: fit-content;
     position: sticky;
     top: 90px;
@@ -385,8 +402,9 @@ header .container {
 }
 
 .review-card {
-    padding: 1rem 0.5rem;
-    border-bottom: 1px solid #f0f4f8;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #d3d3d3;
+    max-width: 98%;
 }
 
 .review-card:last-child {
@@ -421,4 +439,9 @@ header .container {
 .no-reviews {
     font-style: italic;
     margin-bottom: 1.5rem;
+}
+
+.review-form {
+    padding-top: 1.5rem;
+    border-top: 1px solid #d3d3d3;
 }
