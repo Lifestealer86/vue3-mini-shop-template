@@ -517,11 +517,14 @@ header .container {
     background-image: url('../img/star_empty.png');
     background-size: contain;
     background-repeat: no-repeat;
+    filter: brightness(0);
+    transition: .25s;
 }
 
 .star-input label:hover,
 .star-input label:hover ~ label,
 .star-input input:checked ~ label {
     background-image: url('../img/star_full.png');
+    filter: brightness(1);
 }
 
