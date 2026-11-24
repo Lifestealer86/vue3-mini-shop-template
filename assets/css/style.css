@@ -315,6 +315,7 @@ header .container {
 
 .back-btn:hover {
     color: #ba1be5;
+    cursor: pointer;
 }
 
 .btn-block {
