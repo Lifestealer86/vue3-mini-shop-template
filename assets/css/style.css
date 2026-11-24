@@ -793,6 +793,14 @@ header .container {
     font-weight: 600;
 }
 
+.order-error {
+    color: #ff6a6a;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
 .order-success {
     text-align: center;
     padding: 3rem 2rem;
